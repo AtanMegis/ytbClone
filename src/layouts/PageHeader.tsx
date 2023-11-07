@@ -1,5 +1,5 @@
 import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from 'lucide-react'
-import logo from '../assets/youtube.png'
+import logo from '../assets/ytb.jpg'
 import { Button } from '../components/Button'
 import { useState } from 'react'
 import { useSidebarContext } from '../context/SidebarContext'
@@ -30,7 +30,7 @@ export function PageHeader() {
                     <input
                         type="search"
                         placeholder="Search"
-                        className="rounded-l-full border border-secondary-border shadow-inner shadow-secondary py-1 px-4 text-lg w-full focus:border-blue-500 outline-none"
+                        className="rounded-l-full border border-secondary-border shadow-inner shadow-secondary py-1 px-4 text-lg w-full focus:border-blue-500 outline-none "
                     />
                     <Button className="py-2 px-4 rounded-r-full border-secondary-border border border-l-0 flex-shrink-0">
                         <Search />
@@ -89,7 +89,7 @@ export function PageHeaderFirstSection({
                 <Menu />
             </Button>
             <a href="/">
-                <img src={logo} className="h-6" />
+                <img src={logo} className="h-12 w-24" />
             </a>
         </div>
     )
